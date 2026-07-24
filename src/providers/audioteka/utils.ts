@@ -153,7 +153,7 @@ export function extractLabeledArray($: cheerio.CheerioAPI, labels: string[]): st
 
 export function parseSearchResults($: cheerio.CheerioAPI): AudiotekaSearchMatch[] {
   const matches: AudiotekaSearchMatch[] = []
-  const $books = $('.adtk-item.teaser_teaser__FDajW')
+  const $books = $('.teaser_teaser__FDajW')
 
   $books.each((_, element) => {
     const $book = $(element)
